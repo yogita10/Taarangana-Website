@@ -1,0 +1,139 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap');
+  
+  body{
+  	font-family:'Mntserrat', Sans-serif;
+  	/*background-image: url('./imgss/images\ \(3\).jfif');*/
+	  background: #111;
+	 
+  }
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(100deg, #282C34 43% , #20232A 33%,   #0000 45% );
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+}
+.bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+}
+  
+.bg3 {
+    animation-duration:5s;
+}
+.bg4{
+    animation-direction: alternate-reverse;
+    animation-duration: 5s;
+}
+.bg5{
+    animation-duration: 7s;
+}
+.bg6{
+    animation-duration: 8s;
+}
+@keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+}
+  h1{
+	  color: white;
+	  font-size: 4rem;
+	  margin-top: 15%;
+	  margin-bottom: 0;
+  }
+  
+  .color-white{
+  	color:white;
+  }
+  .flip-box{
+  	transform-style: preserve-3d;
+  	perspective:1000px;
+  	cursor:pointer;
+  	margin-top:50px;
+	  width: 100%;
+	  object-fit: cover;
+  }
+
+  .flip-box-front,
+  .flip-box-back{
+  	background-size: cover;
+  	background-position: center;
+	  object-fit: cover;
+	  width: 100%;
+     background-repeat: no-repeat;
+  	border-radius: 8px;
+  	min-height: 475px;
+  	transition:transform 0.7s cubic-bezier(.4,.2,.2,1);
+  	backface-visibility: hidden;
+  }
+
+.flip-box-front{
+	transform:rotateY(0deg);
+	transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-front{
+	transform:rotateY(-180deg);
+	transform-style: preserve-3d;
+}
+
+.flip-box-back{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	transform: rotateY(180deg);
+	transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-back{
+	transform:rotateY(0deg);
+	transform-style: preserve-3d;
+}
+
+.flip-box .inner{
+	position:absolute;
+	left:0;
+	width:100%;
+	padding:60px;
+	outline:1px solid transparent;
+	perspective: inherit;
+	z-index: 2;
+	transform: translateY(-50%)translateZ(60px) scale(.94);
+	top:50%;
+}
+
+
+
+.flip-box p{
+	font-size:0.9rem;
+	
+
+}
+
+.flip-box-img{
+	margin-top:25px;
+}
+
+.flip-box-button{
+	background-color: transparent;
+	border:2px solid #fff;
+	border-radius: 2px;
+	color:#fff;
+	cursor:pointer;
+	font-size:15px;
+	font-weight: bold;
+	margin-top:15px;
+	padding:10px 10px;
+	text-transform: uppercase;
+
+
+}
