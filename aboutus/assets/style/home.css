@@ -45,6 +45,44 @@ body{
   font-weight: bolder;
 
 }
+
+.text-effect h1{
+  color: #fff6a9;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  font-size: 5vw;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 2px auto 0;
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  position: relative;
+  animation: none;
+}
+
+@media only screen and (max-width: 990px) {
+  .text-effect h1{
+      font-size: 80px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .text-effect h1 {
+      font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .text-effect h1 {
+      font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 359px) {
+  .text-effect h1{
+      font-size: 30px;
+  }
+}
+
 .timeline-header__title .text-effect{
   margin-bottom: 10%; 
   margin-top: 0;

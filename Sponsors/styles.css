@@ -303,13 +303,13 @@ body {
 .text-effect {
     color: #fff6a9;
     font-family: 'Sacramento';
-    font-size: 120px;
+    /* font-size: 5vw; */
     font-family: 'Mochiy Pop P One', sans-serif;
     font-size: 5vw;
     font-weight: 600;
     text-align: center;
     text-transform: capitalize;
-    margin: 20px auto 0;
+    margin: 20px ;
     padding-bottom: 50px;
     text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
     position: relative;
