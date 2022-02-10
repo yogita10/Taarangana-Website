@@ -1979,7 +1979,7 @@ html, body {
   }
   
   .text::before {
-    /* content: attr(data-fill-text); */
+    content: attr(data-fill-text);
     position: absolute;
     width: 0;
     height: 100%;
