@@ -83,7 +83,7 @@ const createEvent = (parentAppend) => {
 
         let eventsCardFrontLink = document.createElement('div');
         eventsCardFrontLink.className = "event-link";
-        eventsCardFrontLink.innerHTML = "View Details >";
+        eventsCardFrontLink.innerHTML = "View Details";
         eventsCardFront.appendChild(eventsCardFrontLink);
 
         eventsCard.appendChild(eventsCardFront);
